@@ -1,0 +1,28 @@
+#Spring Data Cassandra configurations
+
+spring:
+  data:
+    cassandra:
+      keyspace-name: main
+      username: rjIKysypYDIiTnYGKxCugJAx
+      password: EAwEgJCHaExc2BZ1N9aZU9.lqUq._ARNUDoSKcHN+QuWu9fpaF,DaeTTpy+dSpaS-6n3UQBoA5N0fqIr38L66_fkzQx9c-NrIK,nF6Zabp1.TrvZZ5sJ8b9q6UQkTv9,
+      schema-action: create-if-not-exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+
+#Astra specific application properties
+datastax.astra:
+    secure-connect-bundle: secure-connect.zip
+
+astra.db:
+    id: 0419e46a-8e8b-43ce-afbb-8a7fc35e7b76-1
+    region: us-west1
+    keyspace: main
+    application.token: AstraCS:rjIKysypYDIiTnYGKxCugJAx:0d142d436019177f3acb48b34197fa992072960502673841b27635a82e14509e
+
+
+
+
